@@ -1,0 +1,16 @@
+# .venv files
+PracticalPhysicsPreperation/.venv
+
+# .env files
+/.env.api
+/.env.auth
+
+# image directory
+/images/
+/question.png
+
+# python cache
+__pycache__/
+*.pyc
+
+
