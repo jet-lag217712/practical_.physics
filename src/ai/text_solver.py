@@ -34,4 +34,4 @@ def request_answer(client, question, answer, type):
     )
 
     answer_text = output.choices[0].message.content.strip()
-    return convert_answer_list(answer_text, qtype=type)
+    return parse_answer(answer_text, qtype=type)

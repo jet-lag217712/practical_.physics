@@ -1,34 +1,22 @@
 import re
 
-def convert_answer_list(answer_text, qtype="radio"):
-    answer_text = answer_text.strip()
-    if qtype == "radio":
-        answer_text = re.sub(r'[^\d]', '', answer_text)
-        if re.match(r'^\d$', answer_text):
-            return [int(answer_text) - 1]
-        else:
-            return [0]
-    elif qtype == "checkbox":
-        answer_text = re.sub(r'[^\d,]', '', answer_text)
-        if re.match(r'^\d(,\d)*$', answer_text):
-            return [int(x) - 1 for x in answer_text.split(',')]
-        else:
-            return [0]
-    elif qtype == "text":
-        return [answer_text] if answer_text else [""]
-    else:
-        raise ValueError(f"Unknown question type: {qtype}")
-
 
 def parse_answer(output, qtype):
+    if not output:
+        raise ValueError("Empty model output")
     output = output.strip()
     if qtype == "radio":
-        m = re.match(r'^\d$', output)
-        return [int(output) - 1] if m else [0]
+        match = re.search(r'\d+', output)
+        if not match:
+            raise ValueError(f"Invalid radio output: {output}")
+        value = int(match.group())
+        return [value - 1]
     elif qtype == "checkbox":
-        m = re.match(r'^\d(,\d)*$', output)
-        return [int(x) - 1 for x in output.split(',')] if m else [0]
+        numbers = re.findall(r'\d+', output)
+        if not numbers:
+            raise ValueError(f"Invalid checkbox output: {output}")
+        return [int(n) - 1 for n in numbers]
     elif qtype == "text":
-        return [output]
+        return [output.strip()]
     else:
         raise ValueError(f"Unknown question type: {qtype}")

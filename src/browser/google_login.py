@@ -21,6 +21,7 @@ def enter_email(page, email):
 
 def enter_password(page, password):
     try:
+        page.wait_for_selector('input[name="Passwd"]', timeout=300000)
         password_input = page.locator('input[name="Passwd"]')
         password_input.wait_for(state="visible", timeout=10000)
         password_input.fill(password)

@@ -5,34 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa27cece-1908-46f3-b68d-5409d40a97ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PracticalPhysicsPreperation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/image_solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/text_solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/utils/format.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/utils/sys_context.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/browser/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/browser/google_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/browser/playwright.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/browser/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/browser/utils/user_agents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/answer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/questions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/util/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/util/question_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/awsToolkit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ai/image_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/image_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ai/utils/sys_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/utils/sys_context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/browser/google_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/browser/google_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quiz/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/answer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jet-lag217712&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jet-lag217712/practical_.physics.git&quot;,
+    &quot;accountId&quot;: &quot;e50d367e-3724-4f73-8ab2-34b5f9f7cd1b&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.venv/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -57,29 +49,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jeet Lad/PycharmProjects/PracticalPhysicsPreperation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Main.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Jeet Lad/PycharmProjects/practical_.physics/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jeet Lad\PycharmProjects\practical_.physics\src" />
+      <recent name="C:\Users\Jeet Lad\PycharmProjects\practical_.physics\" />
       <recent name="C:\Users\Jeet Lad\PycharmProjects\PracticalPhysicsPreperation" />
     </key>
   </component>
@@ -127,14 +123,31 @@
       <updated>1770920574944</updated>
       <workItem from="1770920576299" duration="475000" />
       <workItem from="1770922655312" duration="1016000" />
+      <workItem from="1772557837807" duration="474000" />
+      <workItem from="1772646651011" duration="1760000" />
+      <workItem from="1772661051651" duration="45000" />
+      <workItem from="1772681104591" duration="808000" />
+      <workItem from="1776791591039" duration="2238000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PracticalPhysicsPreperation$main.coverage" NAME="main Coverage Results" MODIFIED="1770920706229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PracticalPhysicsPreperation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1770923501678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/practical__physics$Main.coverage" NAME="Main Coverage Results" MODIFIED="1776795717820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

@@ -15,7 +15,7 @@ def request_picture_answer(client, question, answer, type, image_path):
         image_base64 = base64.b64encode(f.read()).decode("utf-8")
 
     output = client.chat.completions.create(
-        model="meta-llama/llama-4-maverick-17b-128e-instruct",
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
         messages=[
             {
                 "role": "system",
@@ -47,4 +47,4 @@ def request_picture_answer(client, question, answer, type, image_path):
     )
 
     answer_text = output.choices[0].message.content.strip()
-    return convert_answer_list(answer_text, qtype=type)
+    return parse_answer(answer_text, qtype=type)

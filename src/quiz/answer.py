@@ -40,6 +40,6 @@ def type_answer(page, out):
 
 def click_next(page):
     try:
-        page.locator(".submit_button.next-question").click(timeout=1000)
+        page.locator(".submit_button.next-question").click(timeout=5000)
     except:
         raise ButtonNotFound()   # Exception

@@ -17,7 +17,7 @@ from src.ai.image_solver import request_picture_answer
 from src.quiz.util.question_util import stack_images, delete_images_directory, make_images_directory
 from src.browser.utils.user_agents import USER_AGENTS
 
-# Getting Initial URL
+# Getting Typed Initial URL
 INIT_URL = str(input("[I] Enter URL: "))
 print(f"[+] Using URL: {INIT_URL}")
 
