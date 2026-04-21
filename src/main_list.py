@@ -4,7 +4,7 @@ from groq import Groq
 from playwright.sync_api import sync_playwright
 
 from src.config import GROQ_API_KEYS
-from src.config import INIT_URL_DICT
+from src.config import INIT_URLS
 
 from src.browser.playwright import init_page, javascript_load
 from src.browser.google_login import google_login
@@ -18,7 +18,7 @@ from src.ai.image_solver import request_picture_answer
 from src.quiz.util.question_util import stack_images, delete_images_directory, make_images_directory
 from src.browser.utils.user_agents import USER_AGENTS
 
-for INIT_URL, CODE in INIT_URL_DICT.items():
+for INIT_URL in INIT_URLS:
     print(f"[+] Using URL: {INIT_URL}")
 
     # User Agent Selection
@@ -40,12 +40,7 @@ for INIT_URL, CODE in INIT_URL_DICT.items():
     # Logging In via Google SSO
     print(f"[+] Logging In...")
     google_login(page)
-    print(f"[+] Logged In. Inputting Code.")
-
-    # Inputting Code
-    code_input = page.locator('input[name="Passwd"]')
-    code_input.fill(CODE)
-    code_input.submit()
+    print(f"[+] Logged In")
 
     # Fetching Question Input
     page.wait_for_selector(".question_text", timeout=300000)

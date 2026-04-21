@@ -1,5 +1,6 @@
 from src.ai.utils.sys_context import system_context_radio, system_context_checkbox, system_context_textbox
 from src.ai.utils.format import *
+from src.ai.retry import request_with_retry
 
 def request_answer(client, question, answer, type):
 
@@ -10,9 +11,9 @@ def request_answer(client, question, answer, type):
     elif type == 'text':
         context = system_context_textbox
 
-    output = client.chat.completions.create(
-        model="openai/gpt-oss-120b",
-        messages=[
+    request_kwargs = {
+        "model": "openai/gpt-oss-120b",
+        "messages": [
             {
                 "role": "system",
                 "content": (
@@ -27,13 +28,12 @@ def request_answer(client, question, answer, type):
                 """
             }
         ],
-        temperature=0.5,
-        max_completion_tokens=256,
-        top_p=1,
-        reasoning_effort="high",
-        stream=False,
-        stop=None
-    )
+        "temperature": 0.5,
+        "max_completion_tokens": 256,
+        "top_p": 1,
+        "reasoning_effort": "high",
+        "stream": False,
+        "stop": None
+    }
 
-    answer_text = output.choices[0].message.content.strip()
-    return parse_answer(answer_text, qtype=type)
+    return request_with_retry(client, request_kwargs, qtype=type)

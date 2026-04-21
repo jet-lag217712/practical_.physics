@@ -18,5 +18,21 @@ EMAIL = os.getenv("EMAIL")
 PASSWORD = os.getenv("PASSWORD")
 AUTH = [EMAIL,PASSWORD]
 
-INIT_URL_DICT = {"https://summitps.instructure.com/courses/5460/quizzes/51872/take?user_id=3822": "test"
-                 }
+INIT_URLS = [
+             "https://summitps.instructure.com/courses/5460/quizzes/51858",
+             "https://summitps.instructure.com/courses/5460/quizzes/51904",
+             "https://summitps.instructure.com/courses/5460/quizzes/51897",
+             "https://summitps.instructure.com/courses/5460/quizzes/51897",
+]
+
+INIT_URLS_PROD = [
+    "https://summitps.instructure.com/courses/5460/quizzes/51864/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51992/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51986/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51856/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51951/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51961/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51862/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51999/take?user_id=3822",
+    "https://summitps.instructure.com/courses/5460/quizzes/51872/take?user_id=3822",
+]

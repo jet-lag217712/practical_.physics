@@ -2,6 +2,7 @@ import base64
 
 from src.ai.utils.sys_context import system_context_radio, system_context_checkbox, system_context_textbox
 from src.ai.utils.format import *
+from src.ai.retry import request_with_retry
 
 def request_picture_answer(client, question, answer, type, image_path):
     if type == 'radio':
@@ -14,9 +15,9 @@ def request_picture_answer(client, question, answer, type, image_path):
     with open(image_path, "rb") as f:
         image_base64 = base64.b64encode(f.read()).decode("utf-8")
 
-    output = client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct",
-        messages=[
+    request_kwargs = {
+        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "messages": [
             {
                 "role": "system",
                 "content": context
@@ -40,12 +41,11 @@ def request_picture_answer(client, question, answer, type, image_path):
                 ]
             }
         ],
-        temperature=0.5,
-        max_completion_tokens=256,
-        top_p=1,
-        stream=False,
-        stop=None
-    )
+        "temperature": 0.5,
+        "max_completion_tokens": 256,
+        "top_p": 1,
+        "stream": False,
+        "stop": None
+    }
 
-    answer_text = output.choices[0].message.content.strip()
-    return parse_answer(answer_text, qtype=type)
+    return request_with_retry(client, request_kwargs, qtype=type)
