@@ -27,10 +27,12 @@ def request_answer(client, question, answer, type):
                 """
             }
         ],
-        temperature=0.25,
+        temperature=0.5,
         max_completion_tokens=256,
         top_p=1,
-        stream=False
+        reasoning_effort="high",
+        stream=False,
+        stop=None
     )
 
     answer_text = output.choices[0].message.content.strip()

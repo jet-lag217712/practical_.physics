@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa27cece-1908-46f3-b68d-5409d40a97ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/awsToolkit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ai/image_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/image_solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ai/utils/sys_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/utils/sys_context.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/browser/google_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/browser/google_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/quiz/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/answer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ai/text_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/text_solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +52,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Main.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.main_list.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -146,8 +144,10 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/practical__physics$main_list.coverage" NAME="main_list Coverage Results" MODIFIED="1776799401325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PracticalPhysicsPreperation$main.coverage" NAME="main Coverage Results" MODIFIED="1770920706229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PracticalPhysicsPreperation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1770923501678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/practical__physics$Main.coverage" NAME="Main Coverage Results" MODIFIED="1776795717820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/practical__physics$Main.coverage" NAME="Main Coverage Results" MODIFIED="1776799212553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/practical__physics$main.coverage" NAME="main Coverage Results" MODIFIED="1776799800140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

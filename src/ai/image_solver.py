@@ -40,10 +40,11 @@ def request_picture_answer(client, question, answer, type, image_path):
                 ]
             }
         ],
-        temperature=1,
+        temperature=0.5,
         max_completion_tokens=256,
         top_p=1,
-        stream=False
+        stream=False,
+        stop=None
     )
 
     answer_text = output.choices[0].message.content.strip()
